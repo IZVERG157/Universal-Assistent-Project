@@ -360,6 +360,7 @@ namespace UPA
                 string newName = textBoxProjectsListEditProjectName.Text.Replace(" ", "");
                 for (int i = 0; i < itemsControlProjectsList.Items.Count; i++)
                 {
+                    if ((_chosenProjectListsProject.Children[0] as TextBlock).Text == (((itemsControlProjectsList.Items[i] as Border).Child as StackPanel).Children[0] as TextBlock).Text) continue;
                     if ((((itemsControlProjectsList.Items[i] as Border).Child as StackPanel).Children[0] as TextBlock).Text == newName)
                     {
                         MessageBox.Show("Already there is such project");

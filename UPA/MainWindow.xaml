@@ -156,7 +156,7 @@
                             </StackPanel>
                         </Grid>
 
-                        <Grid x:Name="GridOpenProjectWindow" Visibility="Visible" Height="424">
+                        <Grid x:Name="GridOpenProjectWindow" Visibility="Collapsed" Height="424">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="619*"/>
                                 <ColumnDefinition Width="179*"/>
